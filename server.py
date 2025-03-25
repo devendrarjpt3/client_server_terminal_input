@@ -46,12 +46,9 @@ def start_server(port):
         server_socket.close()
 
 if __name__ == "__main__":
-    #port = 40000  # Set your desired port here
-    #start_server(port)
-      if len(sys.argv) != 2:
+         if len(sys.argv) != 2:
          print("Usage: python3 script.py port")
          sys.exit(1)
-
       try:
         port = int(sys.argv[1])
         start_server(port)
