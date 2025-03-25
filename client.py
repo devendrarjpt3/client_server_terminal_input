@@ -10,7 +10,7 @@ def start_client(server_name, port):
         print(f"Connected to {server_name}:{port}")
 
         while True:
-            message = input("Enter message (type  exit): ")
+            message = input("To exit (type quit): ")
             client_socket.sendall(message.encode())
             response = client_socket.recv(1024).decode()
             print (f"Server response: {response}")
